@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+.wrapper {
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 400px;
+        color: white;
+        background-color: black;
+    }
+.cal-button-row {
+        border: 0px solid blue;
+        display: flex;
+        flex-basis: row nowrap;
+        justify-content: space-between;
+        margin: 0.5%;
+}
+.screen {
+    text-align: right;font-family: 'Courier New', Courier, monospace;
+    padding: 20px 5px;
+    font-size: 40px;
+}
+.cal-button {
+    color: #000000;
+    background-color: #d8d9db;
+    border: none;
+    font-size: 40px;
+    height: 100px;
+    flex-basis: 24.5%;
+}
+.cal-button:hover {
+    
+    background-color: #ebebeb;
+}
+.cal-button:active {
+    
+     background-color:#bbbcbe;
+}
+.double {
+    flex-basis: 49.7%;
+}
+.triple {
+    flex-basis: 74.8%;
+}
+.cal-button:last-child {
+    background-color: #df974c;
+    color: white;
+}
+.cal-button:last-child:hover {
+    background-color: #dfb07e;
+}

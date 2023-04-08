@@ -4,145 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="css/about.css">
     <style>
         body {
             font-family:Georgia, 'Times New Roman', Courier, monospace, Times, serif;
             background: linear-gradient(to right top, 
             #65dfc9, #6cdbeb);
+            margin: 0;
+            padding: 0;
         }
+
         main {
-            width: 45rem;
-            height: 35rem;
-            margin: 0px auto;
+            display: flex;
+            flex-direction: column;
+            width: 80vw;
+            height: 75%;
+            margin: 15px auto;
             background: linear-gradient(to right bottom,
             rgba(255, 255, 255, 0.7),
             rgba(255, 255, 255, 0.3)
             );
+            border-radius: 2rem;
+        }
+
+        .intro {
+            margin: 0px;
+            background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)
+            );
+            color: #333;
+            padding: auto;
+            border-radius: 2rem 2rem 0 0;
+        }
+        .intro h1 {
+            margin: 0;
+            margin-top: 20px;
+            font-size: 36px;
+            text-align: center;
+            align-items: center;
+        }
+        header p {
+            margin: 10px 10px;
+            padding: 10;
+            font-size: 1.2rem;
+            font-family: 'poppins';
+            line-height: 1.5;
         }
         
-
-        section {
-            flex-basis: 69%;
-        }
-        article {
+        .sections {
             display: flex;
         }
-        article .righthead {
-            display: block;
-            text-align: center;
+
+        .body {
+            display: flex;
+            flex-direction: column;
+            flex: 2;
+            padding: 10px;
         }
-        h2 {
-            color: white;
-            background-color: rgb(206, 171, 106);
-            margin-top: 40px;
-        }
-        .aside {
-            flex: 9;
-            flex-basis: 31%;
-            background: linear-gradient(to right bottom,
-            rgba(255, 255, 255, 0.7),
-            rgba(255, 255, 255, 0.3));
-        }
+
         aside {
-            display: block;
-            text-align: center;
-            margin-top: 50px;
-            padding: 0;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            align-items: center;
+            justify-content: space-evenly;
             background: linear-gradient(to right bottom,
-            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.2),
             rgba(255, 255, 255, 0.3)
             );
-        }
-        li {
-            padding: 0px;
-            margin-right: 50px;
-            list-style-type: none;
-        }
-        h3 {
-            color: white;
-        }
-        blockquote p {
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-        article p {
-            font-size: 1.2rem;
-        }
-        #hm {
-            text-align: center;
-        }
-        a {
-            text-decoration: none;
-            color: rgb(175, 119, 16);
-        }
-        a:hover {
-            color: snow;
+            border-radius: 0 0 2rem 2rem;
         }
     </style>
 </head>
 <body>
     <main>
-        <section class="intro">
+        <header class="intro">
             <h1>About Me</h1>
-            <img src="" alt="">
-            <p>Hi There! My name Bashir Umar Idris and I am a Frontend Developer based in Kano, Nigeria. I have been learning to code for over past 9 months, and I specialised in Html, Css and Javascript. For over a year I have been taken some time off school to concentrate on learning and upgrading my skills.</p>
+            <p>Hi There! My name Bashir Umar Idris, and I am a Frontend Developer based in Kano, Nigeria. I have been learning to code for over past nine months, and I specialised in Html, Css and Javascript. For over a year I have been taken some time off school to concentrate on learning and upgrading my skills.</p>
 
-            <p>I enjoy all aspects of the web development process from coding the Html, styling with Css, making it interactive with Javascript as well as connecting it to the backend database. My goal is to be a senior web developer and to work from home as a Fullstack web developer.</p>
-        </section>
+            <p>I enjoy all aspects of the web development process from coding the Html, styling with Css, making it interactive with Javascript as well as connecting it to the backend database. My goal is to be a Senior web developer and to work from home as a Fullstack web developer.</p>
+        </header>
 
-        <section class="edu">
-            <h2>Education</h2>
-            <ul>
-                <li>Responsive Web Design, FreeCodeCamp</li>
-                <li>Meta Frontend Development, Coursera</li>
-                <li>Frontend Development Bootcamp, Frontend Masters</li>
-            </ul>
-        </section>
+        <div class="sections">
+            <div class="body">
+            <section class="edu">
+                <h2>Education</h2>
+                <ul>
+                    <li>Responsive Web Design, FreeCodeCamp</li>
+                    <li>Meta Frontend Development, Coursera</li>
+                    <li>Frontend Development Bootcamp, Frontend Masters</li>
+                </ul>
+            </section>
 
-        <section class="exp">
-            <h2>Work Experience</h2>
-            <ul>
-                <li>Web Developer, ABC Company</li>
-                <li>Freelance Web Designer, Self-employed</li>
-                <li>Intern, XYZ Company (Summer 2022)</li>
-            </ul>
-        </section>
+            <section class="exp">
+                <h2>Work Experience</h2>
+                <ul>
+                    <li>Web Developer, ABC Company</li>
+                    <li>Freelance Web Designer, Self-employed</li>
+                    <li>Intern, XYZ Company (Summer 2022)</li>
+                </ul>
+            </section>
 
-        <section class="skills">
-            <h2>skills</h2>
-            <ul>
-                <li>Html5</li>
-                <li>Css3</li>
-                <li>JavaScript</li>
-                <li>React.JS</li>
-            </ul>
-        </section>
-        <p>All our dreams can come true, if we have the courage to pursue them.</p>
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Html5</li>
+                    <li>Css3</li>
+                    <li>JavaScript</li>
+                    <li>React.JS</li>
+                </ul>
+            </section>
+            <blockquote>
+                <p>All our dreams can come true, if we have the courage to pursue them.</p>
                 <cite>Walt Disney</cite>
             </blockquote>
-
-        <aside class="interests">
-            <div class="favorites">
-                <h3>Favorite Things</h3>
-                <ul>
-                    <li>Family</li>
-                    <li>Coding</li>
-                    <li>Traveling</li>
-                    <li>Lonely</li>
-                </ul>
             </div>
-            <div class="resource">
-                <ul>
-                    <h3>Favorite Resources</h3>
-                    <li>FreeCodeCamp</li>
-                    <li>FrontendMasters</li>
-                    <li>YouTube Tutorials</li>
-                    <li>Books</li>
-                    <li>Coursera</li>
-                </ul>
-            </div>
-        </aside>
+            <aside class="interests">
+                <div class="favorites">
+                    <h3>Favorite Things</h3>
+                    <ul>
+                        <li>Family</li>
+                        <li>Coding</li>
+                        <li>Traveling</li>
+                        <li>Lonely</li>
+                    </ul>
+                
+                </div>
+                <div class="resource">
+                    <ul>
+                        <h3>Favorite Resources</h3>
+                        <li>FreeCodeCamp</li>
+                        <li>FrontendMasters</li>
+                        <li>YouTube Tutorials</li>
+                        <li>Books</li>
+                        <li>Coursera</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
     </main>
 </body>
 </html>

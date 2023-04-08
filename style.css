@@ -6,7 +6,8 @@
 
 main {
     min-height: 100vh;
-    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    background: linear-gradient(to right top, 
+    #65dfc9, #6cdbeb);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,8 +61,8 @@ section {
 }
 .user img {
     border-radius: 2rem;
-    width: 50%;
-    height: 50%;
+    width: 60px;
+    height: 60px;
 }
 
 .links {
